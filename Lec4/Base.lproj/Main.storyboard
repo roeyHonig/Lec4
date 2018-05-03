@@ -25,8 +25,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUE-o3-rtt">
-                                <rect key="frame" x="32" y="605" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="32" y="570" width="85" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="Deal"/>
                                 <connections>
                                     <action selector="deal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dF-HG-Leh"/>
                                 </connections>
@@ -69,6 +70,8 @@
                         <outlet property="centerLabel" destination="Egk-MI-M2L" id="wEf-cH-LGj"/>
                         <outlet property="leftLabel" destination="KeH-3e-G09" id="sJG-CJ-FgL"/>
                         <outlet property="rightBottomLabel" destination="fHL-w6-veK" id="WGt-Tx-1uy"/>
+                        <outletCollection property="suits" destination="FKU-4P-rTI" collectionClass="NSMutableArray" id="9Eh-4Y-g7c"/>
+                        <outletCollection property="suits" destination="fHL-w6-veK" collectionClass="NSMutableArray" id="EZq-Eu-SJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

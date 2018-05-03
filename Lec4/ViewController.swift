@@ -15,11 +15,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // Drag and Drop (Left Ctrl + LMB + Drag) from the storyboard, nice, righ?
+    // But don't forget!!!, never change the name of the varmanually
+    // if you made a mistake and want to change the name
+    // use RMB -> Refracotr
+    // in the storyboard, stand on the entire View Controller in the Tree
+    // and press the connection Inspector to delete connections
+    // then you can saftelly change the name of the variable
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var centerLabel: UILabel!
+    
+    @IBOutlet weak var rightBottomLabel: UILabel!
+    @IBAction func deal(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        rightBottomLabel.text = "😀"
         
     }
 

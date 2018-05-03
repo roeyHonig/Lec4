@@ -8,6 +8,9 @@
 // In Swift init is the constractor and swift doesn't let me not init fields
 // In Swift, just like java, we have interface and extending class
 // interface are called protocall - declaring a list of abstract methods
+// class vs Struct  - Ref Vs Value
+// In Swift Int , Double , String are Struct
+
 
 import UIKit
 
@@ -34,13 +37,24 @@ class ViewController: UIViewController {
         print("p2: \(p2)")
         
         
-        
         let person = Person(peoplelFood: "orange", firstName: "roey")
         print(person)
         sayGreetTo(p: person) // !!!! mutating function
         print(person)
         
         
+        
+        
+        
+        //Values Types
+        var pp1 = Spoint(x: 0,y: 0)
+        var pp2 = Spoint(x: 10,y: 20)
+        
+        print(pp1)
+        pp2 = pp1 // copy the fields values of pp1 to pp2
+        pp2.x = -10 // do something with pp2
+        
+        print(pp1) // nothing harmfull happend to pp1
         
         //End of viewDidLoad func
     }
@@ -134,6 +148,8 @@ class CompassPoint: CustomStringConvertible{
 
 
 //Structures are value Types  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Struct don't have super Structs (no inhertience)
+// the init is autometic and we don't need to write it
 struct Spoint {
     var x: Double
     var y: Double

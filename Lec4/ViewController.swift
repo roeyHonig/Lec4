@@ -73,3 +73,24 @@ protocol Cubaser {
     func pitchDown()
 }
 
+
+//Types in Swift: ?
+//enum, protocol, class,?
+
+class CompassPoint: CustomStringConvertible{
+    var x: Double
+    var y: Double
+    
+    var description: String{
+        return "x: \(x),  y: \(y)"
+    }
+    
+    init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
+    }
+    
+    
+}
+
+

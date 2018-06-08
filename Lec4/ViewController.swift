@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         
         
         //Values Types
+        // because Spoint is a struct, and there for, beeing passed as a copy
         var pp1 = Spoint(x: 0,y: 0)
         var pp2 = Spoint(x: 10,y: 20)
         

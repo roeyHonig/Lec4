@@ -38,12 +38,20 @@ class ViewController: UIViewController {
     @IBAction func deal(_ sender: UIButton) {
         //draw a card and push it into -> into the label
         let r = rand(upper: 4)
+        let v = rand(upper: 13) + 2
+        
         var shapeArray:[String] = ["♠︎","❤️","🔷","♣︎"]
        // rightBottomLabel.text = shapeArray[r]
         for item in suits {
             item.text = shapeArray[r]
             
         }
+        
+        if let rank = Rank(rawValue: v) {
+            centerLabel.text = rank.description
+        }
+        
+        
     }
     
     override func viewDidLoad() {
